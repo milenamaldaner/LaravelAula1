@@ -22,3 +22,7 @@ Route::get('/olapessoa/{name}', function($name='Estranho'){
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('paramaiusculo/{palavra}', 'StringsController@paraMaiusculo');
+
+Route::get('paramaiusculoformatado/{palavra}', 'StringsController@paraMaiusculoFormatado');
